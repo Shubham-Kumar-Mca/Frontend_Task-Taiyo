@@ -1,4 +1,4 @@
-# Frontend_Task-Taiyo
+# Frontend_Task-Taiyo (Contact Manager App)
 
 In the project directory, you can run:
 
