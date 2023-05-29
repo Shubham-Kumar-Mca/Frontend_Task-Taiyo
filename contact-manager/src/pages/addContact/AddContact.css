@@ -1,0 +1,112 @@
+.addContact__container{
+    flex: 1;
+    margin-top: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.addContact__container form{
+    border: 1px solid teal;
+    width: 30rem;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+}
+.d-flex{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.d-flex label, .status__title{
+    width: 30%;
+    font-size: 1.3rem;
+}
+.d-flex input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+}
+.status__container{
+    display: flex;
+    align-items: center;
+}
+.status__title + div{
+   width: 65%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.status__container>div>div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.saveContact__btn{
+    padding: 10px 30px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 2rem;
+    transition: all 1s ease-in-out;
+}
+.saveContact__btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* medium screen (Laptops and Small screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .addContact__container{
+        left: 70%;
+    }
+    .addContact__container form {
+        width: 25rem;
+    }
+    .d-flex label, .status__title {
+        font-size: 1rem;
+    }
+}
+
+/* small screen (ipads and Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .addContact__container{
+        left: 70%;
+    }
+    .addContact__container form {
+        width: 17rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .d-flex, .status__container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .d-flex label, .status__title{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .d-flex input{
+        width: 100%;
+        padding: 5px;
+        border: 1px solid black;
+        margin-top: -0.5rem;
+    }
+    .status__title + div{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+}
