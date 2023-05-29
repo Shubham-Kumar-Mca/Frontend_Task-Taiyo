@@ -1,0 +1,33 @@
+.globalData__container{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.globalData__container p{
+    font-weight: 500;
+}
+/* Large screen and Desktop*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .globalData__container{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .globalData__container p, .globalData__container h3{
+        font-size: 1.2rem;
+    }
+}
+
+/* medium screen (Laptops and Small screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .globalData__container p, .globalData__container h3{
+        font-size: 1rem;
+    }
+}
+
+/* small screen (ipads and Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .globalData__container p, .globalData__container h3{
+        font-size: .6rem;
+    }
+}
