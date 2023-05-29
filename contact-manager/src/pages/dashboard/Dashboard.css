@@ -1,0 +1,32 @@
+.Dashboard__cotainer{
+    width: 65%;
+    margin-top: 6rem;
+    margin-right: 1rem;
+    position: absolute;
+    left: 30%;
+}
+.Dashboard__cotainer h2{
+    text-align: center;
+}
+/* Large screen and Desktop*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .Dashboard__cotainer{
+        width: 60%;
+        left: 38%;
+    }
+}
+/* medium screen (Laptops and Small screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .Dashboard__cotainer{
+        width: calc(100vw - 32vw);
+        left: 31vw;
+    }
+}
+
+/* small screen (ipads and Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .Dashboard__cotainer{
+        width: calc(100vw - 42vw);
+        left: 41vw;
+    }
+}
