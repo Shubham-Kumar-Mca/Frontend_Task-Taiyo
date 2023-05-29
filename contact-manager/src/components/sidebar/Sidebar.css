@@ -1,0 +1,62 @@
+.navbar__title{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3675A8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navbar__title h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.sidebar__title{
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding: 1rem 2rem;
+    border-right: 1px solid gray;
+    margin-top: 4.5rem;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}
+.sidebar__title a{
+    text-decoration: none;
+    border: 1px solid teal;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.sidebar__container{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* medium screen (Laptops and Small screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .sidebar__title {
+        width: 30vw;
+        height: 100vh;
+    }
+}
+
+/* small screen (ipads and Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .sidebar__title {
+        width: 40vw;
+        padding: 1rem;
+        height: 100vh;
+    }
+    .sidebar__title a{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
