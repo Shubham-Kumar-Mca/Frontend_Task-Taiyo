@@ -1,0 +1,15 @@
+.country__container {
+    margin-top: 2rem;
+}
+
+.country__container h3 {
+    margin-bottom: 2rem;
+}
+
+.leaflet-container {
+    height: 90vh;
+    border-radius: 2rem;
+}
+.map__container{
+    margin-bottom: 2rem;
+}
