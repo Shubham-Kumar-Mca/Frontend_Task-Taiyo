@@ -1,0 +1,184 @@
+.contact__container {
+    width: 58rem;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+}
+
+.crateContact__btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 1s ease-in-out;
+}
+
+.crateContact__btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5rem;
+
+}
+.table-wrapper{
+    overflow-x: auto;
+}
+
+table td,
+table th {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: rgb(2, 63, 2);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+table tbody tr:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.action {
+    display: flex;
+    gap: .5rem;
+}
+
+.action a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 2px;
+    background-color: #3675A8;
+    color: #fff;
+}
+
+
+.action button {
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #db3545;
+}
+
+.no__contact__found__container {
+    border: 1px solid black;
+    width: 36.5rem;
+    margin: auto;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 5px;
+}
+
+.no__contact__found__container div svg {
+    font-size: 3rem;
+}
+
+.no__contact__found__container div p {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 1320px) {
+    .contact__container {
+        width: 50rem;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+}
+
+/* Large screen and Desktop*/
+@media only screen and (min-width: 1025px) and (max-width: 1250px) {
+    .contact__container {
+        width: 40rem;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+    }
+}
+
+/* medium screen (Laptops and Small screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact__container {
+        width: calc(100vw - 32vw);
+        left: 31vw;
+    }
+
+    .no__contact__found__container {
+        width: calc(100vw - 48vw);
+        padding: 2rem 1.5rem;
+        margin-top: 6rem;
+    }
+
+    .no__contact__found__container div svg {
+        font-size: 2.5rem;
+    }
+
+    .no__contact__found__container div p {
+        font-size: 2rem;
+    }
+
+    table{
+        width: calc(100vw - 32vw);
+        display: block;
+        overflow-x: auto;
+        margin: 5rem auto;
+    }
+
+
+    table th,
+    td {
+        font-size: .8rem;
+    }
+}
+
+
+/* small screen (ipads and Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .contact__container {
+        width: calc(100vw - 42vw);
+        left: 41vw;
+    }
+
+    .no__contact__found__container {
+        width: calc(100vw - 42vw);
+        padding: 1.5rem;
+        margin-top: 6rem;
+    }
+
+    .no__contact__found__container div svg {
+        font-size: 2rem;
+    }
+
+    .no__contact__found__container div p {
+        font-size: 1rem;
+    }
+    table{
+        width: calc(100vw - 42vw);
+        display: block;
+        overflow-x: auto;
+        margin: 5rem auto;
+    }
+    table th,
+    td {
+        font-size: .7rem;
+    }
+}
